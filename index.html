@@ -1,61 +1,70 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mein Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mein Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <span class="logo">Malte</span>
+      <div class="links">
         <a href="#about">Über mich</a>
         <a href="#projects">Projekte</a>
         <a href="#contact">Kontakt</a>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="hero">
+      <h1>Hi, ich bin Malte</h1>
+      <p>Ich lerne Webentwicklung.</p>
+    </section>
 
-    <main>
-      <section id="hero">
-        <h1>Hi, ich bin Malte</h1>
-        <p>Ich lerne Webentwicklung.</p>
-      </section>
+    <section id="about">
+      <h2>Über mich</h2>
+      <p>
+        Ich interessiere mich für Webentwicklung und möchte ein paar kleine
+        Projekte realisieren.
+      </p>
+    </section>
 
-      <section id="about">
-        <h2>Über mich</h2>
-        <p>
-          Ich interessiere mich für Webentwicklung und möchte ein paar kleine
-          Projekte realisieren.
-        </p>
-      </section>
+    <section id="projects">
+      <h2>Projekte</h2>
+      <ul class="cards">
+        <li class="card">
+          <article>
+            <h3>Projekt 1</h3>
+            <p>Beschreibung von Projekt 1.</p>
+          </article>
+        </li>
+        <li class="card">
+          <article>
+            <h3>Projekt 2</h3>
+            <p>Beschreibung von Projekt 2.</p>
+          </article>
+        </li>
+        <li class="card">
+          <article>
+            <h3>Projekt 3</h3>
+            <p>Beschreibung von Projekt 3.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
 
-      <section id="projects">
-        <h2>Projekte</h2>
-        <!-- hier kommen später Karten rein -->
-            <ul>
-                <li>
-                    <article>
-                        <h3>Projekt 1</h3>
-                        <p>Beschreibung von Projekt 1.</p>
-                    </article>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <article>
-                        <h3>Projekt 2</h3>
-                        <p>Beschreibung von Projekt 2.</p>
-                    </article>
-                </li>
-      </section>
+    <section id="contact">
+      <h2>Kontakt</h2>
+    </section>
+  </main>
 
-      <section id="contact">
-        <h2>Kontakt</h2>
-      </section>
-    </main>
+  <footer class="container">
+    <p>&copy; 2026</p>
+  </footer>
+</body>
 
-    <footer>
-      <p>&copy; 2026</p>
-    </footer>
-  </body>
 </html>
